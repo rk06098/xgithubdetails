@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+}
+
+.page {
+  padding: 40px;
+}
+
+.card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.error {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.profile img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.stats span {
+  margin-right: 10px;
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
