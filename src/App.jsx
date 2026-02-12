@@ -6,6 +6,13 @@ function App() {
   const [user, setUser] = useState(null);
   const [error, setError] = useState("");
 
+
+  const handleKeyDown = (e) => {
+  if (e.key === "Enter") {
+    handleSearch();
+  }
+}
+
   const handleSearch = async () => {
     if (!username.trim()) {
       setError("Please enter a GitHub username.");
@@ -47,6 +54,7 @@ function App() {
             placeholder="e.g. torvalds, gaearon, octocat"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <button onClick={handleSearch}>Search</button>
         </div>
